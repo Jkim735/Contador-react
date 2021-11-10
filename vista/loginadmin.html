@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles/loginadmin.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span class="nav-bar" id="btn-menu"><i class="fas fa-bars"></i></span><!--el i es el icono de amburgesa-->
+            <nav class="main-nav">
+                <ul class="menu" id="menu">
+                    <img src="./imgs/logo.png" alt="logo restaurant" width="250">
+                    <li class="menu-item"><a href="../index.php" class="menu-link color">Home</a></li>
+                    <li class="menu-item"><a href="../index.php" class="menu-link">Nosotros</a></li>
+                    <li class="menu-item"><a href="loogin_usuario.html" class="menu-link">Realizar Pedido</a></li>
+                    <li class="menu-item"><a href="../index.php" class="menu-link">Registrarse</a></li>
+                    <li class="menu-item"><a href="loginadmin.html" class="menu-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <form action="../controlador/admin.php" method="POST">
+                <h1>ADMINISTRACION</h1>
+                <label for=""><input type="number" placeholder="CEDULA DE IDENTIDAD" required name="usu"></label>
+                <label for=""><input type="password" placeholder="CONTRASEÑA" required name="contra"></label>
+                <input type="submit" value="INGRESAR">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div id="footer_contacto">
+                <p>
+                    Teléfono: +591 73548703
+                </p>
+                <p>
+                    Email: jhimy@gmail.com
+                </p>
+                <p>
+                    Web: jhimy.com
+                </p>           
+            </div>
+            <div id="footer_social">
+                
+                <a href="#" target="_blank">
+                    <img src="imgs/social/facebook.png" alt="Facebook" width="40px">
+                </a>
+                <a href="#">
+                    <img src="imgs/social/whatsapp.png" alt="WhatsApp" width="40px">
+                </a>
+                <a href="#">
+                    <img src="imgs/social/youtube.png" alt="Youtube" width="40px">
+                </a>
+            </div>
+            <p>Jkim - Todos los Derechos Reservados</p>
+        </footer>
+
+
+        <script src="./scripts/loginadmin.js"></script>
+</body>
+</html>

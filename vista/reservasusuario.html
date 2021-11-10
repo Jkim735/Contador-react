@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles/pedidos.css">
+    <title>REALIZA PEDIDOS</title>
+</head>
+<body>
+    <header>
+        <span class="nav-bar" id="btn-menu"><i class="fas fa-bars"></i></span><!--el i es el icono de amburgesa-->
+            <nav class="main-nav">
+                <ul class="menu" id="menu">
+                    <img src="./imgs/logo.png" alt="logo restaurant" width="250">
+                    <li class="menu-item"><a href="../index.php" class="menu-link color">Home</a></li>
+                    <li class="menu-item"><a href="../index.php" class="menu-link">Nosotros</a></li>
+                    <li class="menu-item"><a href="reservasusuario.html" class="menu-link">Realizar Pedido</a></li>
+                    <li class="menu-item"><a href="../index.php" class="menu-link">Registrarse</a></li>
+                    <li class="menu-item"><a href="../vista/loginadmin.html" class="menu-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <form action="../controlador/verificarusuplato.php" method="POST">
+                <h1>REALIZA TU PEDIDO</h1>
+                <label for=""><input type="number" placeholder="CEDULA DE IDENTIDAD" required name="usu"></label>
+                <label for="">Fecha Entrega<input type="date" placeholder="FECHA DE ENTREGA" required name="feen"></label>
+                <label for="">Hora Entrega<input type="time" placeholder="HORA DE ENTREGA" required name="hoen"></label>
+                <label for=""><input type="number" placeholder="CANTIDAD DE PLATOS" required name="capla"></label>
+                <label for=""><input type="number" placeholder="TELEFONO DE REFERENCIA" required name="tel"></label>
+                <label for=""><input type="text" placeholder="DIRECCION DESTINO" required name="destino"></label>
+                <label for=""><input type="text" placeholder="NOMBRE DEL PLATO" required name="plato"></label>
+                <input type="submit" value="REALIZAR PEDIDO">
+            </form>
+        </div>
+        <footer>
+            <div id="footer_contacto">
+                <p>
+                    Teléfono: +591 73548703
+                </p>
+                <p>
+                    Email: jhimy@gmail.com
+                </p>
+                <p>
+                    Web: jhimy.com
+                </p>           
+            </div>
+            <div id="footer_social">
+                
+                <a href="#" target="_blank">
+                    <img src="imgs/social/facebook.png" alt="Facebook" width="40px">
+                </a>
+                <a href="#">
+                    <img src="imgs/social/whatsapp.png" alt="WhatsApp" width="40px">
+                </a>
+                <a href="#">
+                    <img src="imgs/social/youtube.png" alt="Youtube" width="40px">
+                </a>
+            </div>
+            <p>Jkim - Todos los Derechos Reservados</p>
+        </footer>
+
+
+        <script src="./scripts/loginadmin.js"></script>
+</body>
+</html>
